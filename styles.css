@@ -1,0 +1,166 @@
+:root {
+    --font-family: League Spartan;
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--white);
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.main-text h2 {
+    color: var(--very-dark-magenta);
+    font-family: var(--font-family);
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: 445px;
+    height: 154px;
+    margin: 0;
+}
+
+.main-text p {
+    color: var(--dark-grayish-magenta);
+    font-family: var(--font-family);
+    width: 445px;
+    height: 75px;
+    font-size: 1.1rem;
+    line-height: 1.25;
+}
+
+.ratings h3 {
+    color: var(--very-dark-magenta);
+    font-family: var(--font-family);
+}
+
+.ratings {
+    display: flex;
+    width: 27.8125rem;
+    height: 3.5rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-grayish-magenta);
+    width: 445px;
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.ratings-container {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ratings-container div:nth-child(2) {
+    align-self: center;
+}
+
+.ratings-container div:nth-child(3) {
+    align-self: flex-end;
+}
+
+.card {
+    width: 350px;
+    height: 234px;  
+    background-color: var(--very-dark-magenta);
+    border-radius: 8px;
+}
+
+.card h4 {
+    color: var(--white);
+    font-family: League Spartan;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card h6 {
+    color: var(--soft-pink);
+    font-family: League Spartan;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card img {
+    border-radius: 45px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.reviewer-tag {
+    h4 {
+        font-size: 1.0625rem;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    h6 {
+        font-size: 1.0625rem;
+        margin-bottom: 0;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+}
+
+.reviewer-details {
+    display: flex;
+    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+}
+
+.card p {
+    color: var(--white);
+    font-family: League Spartan;
+    font-size: 1.04rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 0 32px 35px;
+    margin: 32px 0 0 0;
+}
+
+.reviews {
+    display: flex;
+    height: 266px;
+    width: 1110px;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: flex-start;
+}
+
+.reviews div:nth-child(2) {
+    align-self: center;
+}
+
+.reviews div:nth-child(3) {
+    align-self: flex-end;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    z-index: -1;
+}
